@@ -9,8 +9,8 @@ from typing import Optional
 
 import click
 
-from cli_anything.novita.core.client import NovitaClient, NovitaError
-from cli_anything.novita.utils.output import (
+from cnovita.core.client import NovitaClient, NovitaError
+from cnovita.utils.output import (
     format_balance,
     format_table,
     output_error,

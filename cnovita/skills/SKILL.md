@@ -9,7 +9,7 @@ description: >
   workloads, or interact with any novita.ai API. Also trigger when the user mentions the `novita`
   or `cnovita` CLI tool, Novita AI pricing/models/balance, or any task involving the Novita platform.
 command: novita
-install: pip install -e agent-harness/
+install: pip install -e .
 env:
   NOVITA_API_KEY: required
 capabilities:

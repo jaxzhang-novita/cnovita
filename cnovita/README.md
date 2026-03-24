@@ -5,11 +5,10 @@ Command-line interface for all Novita AI APIs: LLM chat, embeddings, image gener
 ## Installation
 
 ```bash
-cd agent-harness
 pip install -e .
 ```
 
-This installs two commands: `novita` and `cli-anything-novita`.
+This installs two commands: `novita` and `cnovita`.
 
 ## Configuration
 

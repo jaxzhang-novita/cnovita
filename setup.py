@@ -1,6 +1,6 @@
-"""Setup for cli-anything-novita."""
+"""Setup for cnovita."""
 
-from setuptools import setup, find_namespace_packages
+from setuptools import setup, find_packages
 
 setup(
     name="cnovita",
@@ -12,18 +12,18 @@ setup(
         + (open("CHANGELOG.md").read() if __import__("os").path.exists("CHANGELOG.md") else "")
     ),
     long_description_content_type="text/markdown",
-    author="jaxzhang-svg",
+    author="jaxzhang-novita",
     url="https://github.com/jaxzhang-novita/cnovita",
     python_requires=">=3.8",
-    packages=find_namespace_packages(include=["cli_anything.*"]),
+    packages=find_packages(include=["cnovita", "cnovita.*"]),
     install_requires=[
         "click>=8.0",
         "requests>=2.28",
     ],
     entry_points={
         "console_scripts": [
-            "novita=cli_anything.novita.novita_cli:main",
-            "cnovita=cli_anything.novita.novita_cli:main",
+            "novita=cnovita.novita_cli:main",
+            "cnovita=cnovita.novita_cli:main",
         ],
     },
     classifiers=[
